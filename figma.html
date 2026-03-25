@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>D.A.U'S Shop</title>
+
+    <!-- ICON đẹp hơn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #e6cfe0;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            padding: 10px;
+        }
+
+        .banner-left img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .banner-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .banner-center h2,
+        .banner-center h1,
+        .banner-center p {
+            color: #b45f5f;
+            margin: 5px;
+        }
+
+        .banner-right img {
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        /*TOPBAR */
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #d9b3cc;
+            padding: 10px 20px;
+        }
+
+        /* SEARCH */
+        .search input {
+            width: 220px;
+            padding: 7px 12px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        /* MENU */
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* ICON */
+        .icons {
+            display: flex;
+            gap: 18px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .icons i:hover {
+            color: #ff4d6d;
+        }
+
+        /* BRAND */
+        .brands {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+       .brands img {
+            height: 55px;
+            mix-blend-mode: multiply;
+            border-radius: 15px;
+        }
+        /* PRODUCTS */
+        .products {
+            padding: 20px;
+        }
+
+        .products h3 {
+            color: red;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            text-align: center;
+            width: 200px;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="banner-left">
+            <img src="./5.jpg">
+        </div>
+
+        <div class="banner-center">
+            <h2>Cửa Hàng Giày Dép</h2>
+            <h1>DẬU'S</h1>
+            <p>hiện đại, trẻ trung, bền bỉ</p>
+        </div>
+
+        <div class="banner-right">
+            <img src="./sale.jpg">
+        </div>
+    </div>
+
+    <!-- TOPBAR (SEARCH + MENU + ICON) -->
+    <div class="topbar">
+
+        <!-- SEARCH -->
+        <div class="search">
+            <input type="text" placeholder="🔍 Tìm kiếm...">
+        </div>
+
+        <!-- MENU -->
+        <div class="menu">
+            <a href="#">khuyến mãi</a>
+            <a href="#">giày nam</a>
+            <a href="#">giày nữ</a>
+            <a href="#">dép nam</a>
+            <a href="#">dép nữ</a>
+        </div>
+
+        <!-- ICON -->
+        <div class="icons">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+
+    </div>
+
+    <!-- BRANDS -->
+    <div class="brands">
+        <img src="./adidas.jpg">
+        <img src="./jordan.png">
+        <img src="./puma.png">
+        <img src="/nike.png">
+        <img src="./vans.jpg">
+        <img src="./modini.jpg">
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products">
+        <h3>Sản phẩm nổi bật</h3>
+
+        <div class="product-list">
+            <div class="product">
+                <img src="./1.jpeg">
+                <p>Giày Adidas Superstar White Black ID4670</p>
+                <p class="price">1,500,000VND</p>
+            </div>
+
+            <div class="product">
+                <img src="./2.jpeg">
+                <p>Giày Adidas Samba OG J Black IE3676</p>
+                <p class="price">2,700,000VND</p>
+            </div>
+
+            <div class="product">
+                <img src="./3.jpeg">
+                <p>Giày Adidas Orginal Forum Beige IE713</p>
+                <p class="price">1,500,000VND</p>
+            </div>
+
+            <div class="product">
+                <img src="./4.jpeg">
+                <p>Giày Nike Court Vision Next Nature Black DH2987-001</p>
+                <p class="price">1,500,000VND</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
